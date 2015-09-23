@@ -144,7 +144,7 @@ static class DeploymentController
 		//DrawShips
 		foreach (ShipName sn in Enum.GetValues(typeof(ShipName))) {
 			int i = 0;
-			i = Conversion.Int(sn) - 1;
+			i = ((int) sn) - 1;
 			if (i >= 0) {
 				if (sn == _selectedShip) {
 					SwinGame.DrawBitmap(GameImage("SelectedShip"), SHIPS_LEFT, SHIPS_TOP + i * SHIPS_HEIGHT);
