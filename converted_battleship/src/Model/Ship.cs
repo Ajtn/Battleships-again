@@ -85,6 +85,7 @@ public class Ship
 
 	/// <summary>
 	/// Add tile adds the ship tile
+	
 	/// </summary>
 	/// <param name="tile">one of the tiles the ship is on</param>
 	public void AddTile(Tile tile)
