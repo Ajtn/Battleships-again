@@ -5,6 +5,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using SwinGameSDK;
+using GameController;
+using UtilityFunctions;
 
 /// <summary>
 /// The DeploymentController controls the players actions
@@ -57,7 +59,7 @@ static class DeploymentController
 			_currentDirection = Direction.LeftRight;
 		}
 
-		if (SwinGame.KeyTyped(KeyCode.vk_R)) {
+		if (SwinGame.KeyTyped(KeyCode.vk_r)) {
 			HumanPlayer.RandomizeDeployment();
 		}
 
