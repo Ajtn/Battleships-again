@@ -1,4 +1,4 @@
-Imports SwinGameSDK
+Using SwinGameSDK
 
 ''' <summary>
 ''' The menu controller handles the drawing and user interactions
