@@ -57,7 +57,7 @@ static class DeploymentController
 			_currentDirection = Direction.LeftRight;
 		}
 
-		if (SwinGame.KeyTyped(KeyCode.vk_R)) {
+		if (SwinGame.KeyTyped(KeyCode.vk_r)) {
 			HumanPlayer.RandomizeDeployment();
 		}
 
