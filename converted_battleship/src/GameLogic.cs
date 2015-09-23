@@ -18,7 +18,7 @@ namespace BattleShips
 
 		    //Load Resources
 		    LoadResources();
-
+            
 		    SwinGame.PlayMusic(GameMusic("Background"));
 
 		    //Game Loop

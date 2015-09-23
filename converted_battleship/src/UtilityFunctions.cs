@@ -6,13 +6,13 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using SwinGameSDK;
 
-namespace BattleShips
+namespace UtilityFunctions
 {
     /// <summary>
     /// This includes a number of utility methods for
     /// drawing and interacting with the Mouse.
     /// </summary>
-    static class UtilityFunctions
+    static public class UtilityFunctions
     {
         public const int FIELD_TOP = 122;
         public const int FIELD_LEFT = 349;
@@ -140,10 +140,15 @@ namespace BattleShips
 
                     draw = true;
 
-                    switch (grid.Item[row, col])
+                    switch (grid[row, col])
                     {
                         case TileView.Ship:
-                            draw = false;
+                            if (small)
+                                fillColor = SMALL_SHIP;
+                            else if (!small)
+                                fillColor = LARGE_SHIP;
+                            else
+                                draw = false;
                             break;
                         //If small Then fillColor = _SMALL_SHIP Else fillColor = _LARGE_SHIP
                         case TileView.Miss:
@@ -157,13 +162,6 @@ namespace BattleShips
                                 fillColor = SMALL_HIT;
                             else
                                 fillColor = LARGE_HIT;
-                            break;
-                        case TileView.Sea:
-                        case TileView.Ship:
-                            if (small)
-                                fillColor = SMALL_SEA;
-                            else
-                                draw = false;
                             break;
                     }
 
@@ -250,9 +248,6 @@ namespace BattleShips
         {
             switch (CurrentState)
             {
-                case GameState.ViewingMainMenu:
-                case GameState.ViewingGameMenu:
-                case GameState.AlteringSettings:
                 case GameState.ViewingHighScores:
                     SwinGame.DrawBitmap(GameImage("Menu"), 0, 0);
                     break;
@@ -308,7 +303,7 @@ namespace BattleShips
             foreach (Sprite s in _Animations)
             {
                 SwinGame.UpdateSprite(s);
-                if (s.animationHasEnded)
+                if (s.AnimationHasEnded)
                 {
                     ended.Add(s);
                 }

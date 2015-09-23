@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using SwinGameSDK;
 
-namespace BattleShips
+namespace GameResources
 {
     public static class GameResources
     {
@@ -71,7 +71,7 @@ namespace BattleShips
 
         public static Font GameFont(string font)
         {
-            return _Fonts(font);
+            return _Fonts[font];
         }
 
         /// <summary>
@@ -82,7 +82,7 @@ namespace BattleShips
 
         public static Bitmap GameImage(string image)
         {
-            return _Images(image);
+            return _Images[image];
         }
 
         /// <summary>
@@ -93,7 +93,7 @@ namespace BattleShips
 
         public static SoundEffect GameSound(string sound)
         {
-            return _Sounds(sound);
+            return _Sounds[sound];
         }
 
         /// <summary>
@@ -104,7 +104,7 @@ namespace BattleShips
 
         public static Music GameMusic(string music)
         {
-            return _Music(music);
+            return _Music[music];
         }
 
         private static Dictionary<string, Bitmap> _Images = new Dictionary<string, Bitmap>();
