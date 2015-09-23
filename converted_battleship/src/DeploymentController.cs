@@ -6,6 +6,13 @@ using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using SwinGameSDK;
+using static GameController;
+using static UtilityFunctions;
+using static GameResources;
+using static DiscoveryController;
+using static EndingGameController;
+using static MenuController;
+using static HighScoreController;
 
 /// <summary>
 /// The DeploymentController controls the players actions
@@ -47,18 +54,18 @@ static class DeploymentController
 	/// </remarks>
 	public static void HandleDeploymentInput()
 	{
-		if (SwinGame.KeyTyped(KeyCode.VK_ESCAPE)) {
+		if (SwinGame.KeyTyped(KeyCode.vk_ESCAPE)) {
 			AddNewState(GameState.ViewingGameMenu);
 		}
 
-		if (SwinGame.KeyTyped(KeyCode.VK_UP) | SwinGame.KeyTyped(KeyCode.VK_DOWN)) {
+		if (SwinGame.KeyTyped(KeyCode.vk_UP) | SwinGame.KeyTyped(KeyCode.vk_DOWN)) {
 			_currentDirection = Direction.UpDown;
 		}
-		if (SwinGame.KeyTyped(KeyCode.VK_LEFT) | SwinGame.KeyTyped(KeyCode.VK_RIGHT)) {
+		if (SwinGame.KeyTyped(KeyCode.vk_LEFT) | SwinGame.KeyTyped(KeyCode.vk_RIGHT)) {
 			_currentDirection = Direction.LeftRight;
 		}
 
-		if (SwinGame.KeyTyped(KeyCode.VK_R)) {
+		if (SwinGame.KeyTyped(KeyCode.vk_R)) {
 			HumanPlayer.RandomizeDeployment();
 		}
 
