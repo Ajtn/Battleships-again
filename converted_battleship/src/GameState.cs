@@ -6,14 +6,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using SwinGameSDK;
-using static GameController;
-using static UtilityFunctions;
-using static GameResources;
-using static DeploymentController;
-using static DiscoveryController;
-using static EndingGameController;
-using static MenuController;
-using static HighScoreController;
+
 /// <summary>
 /// The GameStates represent the state of the Battleships game play.
 /// This is used to control the actions and view displayed to

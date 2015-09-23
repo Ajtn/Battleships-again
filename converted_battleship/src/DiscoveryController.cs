@@ -6,13 +6,6 @@ using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using SwinGameSDK;
-using static GameController;
-using static UtilityFunctions;
-using static GameResources;
-using static DeploymentController;
-using static EndingGameController;
-using static MenuController;
-using static HighScoreController;
 
 /// <summary>
 /// The battle phase is handled by the DiscoveryController.
