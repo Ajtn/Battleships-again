@@ -5,8 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using SwinGameSDK;
-using BattleShips;
-using static BattleShips.GameResources;
+using GameResources;
 
 namespace BattleShips
 {

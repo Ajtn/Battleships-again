@@ -5,6 +5,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using SwinGameSDK;
+using GameController;
+using UtilityFunctions;
 
 /// <summary>
 /// The DeploymentController controls the players actions
