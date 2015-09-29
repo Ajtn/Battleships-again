@@ -7,6 +7,15 @@ using System.Diagnostics;
 using SwinGameSDK;
 using GameResources;
 
+using static GameController;
+using static UtilityFunctions;
+using static GameResources;
+using static DeploymentController;
+using static DiscoveryController;
+using static EndingGameController;
+using static MenuController;
+using static HighScoreController;
+
 namespace BattleShips
 {
     static class GameLogic

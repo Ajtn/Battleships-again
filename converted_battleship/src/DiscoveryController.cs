@@ -5,7 +5,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using SwinGameSDK;
-using UtilityFunctions;
+
+using static GameController;
+using static UtilityFunctions;
+using static GameResources;
+using static DeploymentController;
+using static EndingGameController;
+using static MenuController;
+using static HighScoreController;
 
 namespace BattleShips
 {
