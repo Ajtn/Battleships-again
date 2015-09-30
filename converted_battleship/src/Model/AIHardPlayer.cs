@@ -26,7 +26,7 @@ namespace BattleShip
     /// the AI knows it has hit multiple ships. Then will try to destoy all around tiles
     /// that have been hit.
     /// </summary>
-    public class AIHardPlayer : AIPlayer
+	public class AIHardPlayer : AIPlayer
     {
 
         /// <summary>

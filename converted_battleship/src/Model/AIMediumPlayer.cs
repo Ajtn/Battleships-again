@@ -6,13 +6,13 @@ using System.Diagnostics;
 using SwinGameSDK;
 
 
-namespace Battleship
+namespace BattleShip
 {
     /// <summary>
     /// The AIMediumPlayer is a type of AIPlayer where it will try and destroy a ship
     /// if it has found a ship
     /// </summary>
-    public class AIMediumPlayer : GameController.AIPlayer
+    public class AIMediumPlayer : AIPlayer
     {
         /// <summary>
         /// Private enumarator for AI states. currently there are two states,
