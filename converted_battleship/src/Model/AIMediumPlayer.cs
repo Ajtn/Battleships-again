@@ -12,7 +12,7 @@ namespace Battleship
     /// The AIMediumPlayer is a type of AIPlayer where it will try and destroy a ship
     /// if it has found a ship
     /// </summary>
-    public class AIMediumPlayer : AIPlayer
+    public class AIMediumPlayer : GameController.AIPlayer
     {
         /// <summary>
         /// Private enumarator for AI states. currently there are two states,

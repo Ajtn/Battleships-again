@@ -81,7 +81,7 @@ namespace BattleShip
             public static bool operator !=(Location @this, Location other)
             {
                 return ReferenceEquals(@this, null) || ReferenceEquals(other, null) || @this.Row != other.Row || @this.Column != other.Column;
-            }
+            }	
         }
 
 
