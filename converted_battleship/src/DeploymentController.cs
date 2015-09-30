@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using SwinGameSDK;
 
-namespace battleships
+namespace Battleship
 {
 /// <summary>
 /// The DeploymentController controls the players actions
@@ -182,8 +182,10 @@ static class DeploymentController
 
 		return ShipName.None;
 	}
+
 }
 }
+
 
 //=======================================================
 //Service provided by Telerik (www.telerik.com)

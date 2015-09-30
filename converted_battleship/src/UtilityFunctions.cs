@@ -6,8 +6,10 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using SwinGameSDK;
 
-namespace UtilityFunctions
+
+namespace BattleShip
 {
+
     /// <summary>
     /// This includes a number of utility methods for
     /// drawing and interacting with the Mouse.

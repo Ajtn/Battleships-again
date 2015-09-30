@@ -5,10 +5,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using SwinGameSDK;
-using GameResources;
 
-namespace BattleShips
+
+namespace BattleShip
 {
+
     static class GameLogic
     {
 	    public static void Main()

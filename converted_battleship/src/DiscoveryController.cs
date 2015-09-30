@@ -5,9 +5,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using SwinGameSDK;
-using UtilityFunctions;
 
-namespace BattleShips
+
+namespace BattleShip
 {
     /// <summary>
     /// The battle phase is handled by the DiscoveryController.
