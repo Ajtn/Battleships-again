@@ -189,7 +189,7 @@ namespace BattleShip
 				    PlayMissSequence(result.Row, result.Column, isHuman);
 				    break;
 			    case ResultOfAttack.ShotAlready:
-				    Audio.PlaySoundEffect(GameSound("Error"));
+				Audio.PlaySoundEffect(GameResources.GameSound("Error"));
 				    break;
 		    }
 	    }
@@ -275,16 +275,16 @@ namespace BattleShip
 
 		    switch (CurrentState) {
 			    case GameState.ViewingMainMenu:
-				    HandleMainMenuInput();
+				MenuController.HandleMainMenuInput();
 				    break;
 			    case GameState.ViewingGameMenu:
-				    HandleGameMenuInput();
+				MenuController.HandleGameMenuInput();
 				    break;
 			    case GameState.AlteringSettings:
-				    HandleSetupMenuInput();
+				MenuController.HandleSetupMenuInput();
 				    break;
 			    case GameState.Deploying:
-				    HandleDeploymentInput();
+				MenuController.HandleDeploymentInput();
 				    break;
 			    case GameState.Discovering:
 				    HandleDiscoveryInput();
