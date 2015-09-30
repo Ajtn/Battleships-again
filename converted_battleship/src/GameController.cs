@@ -284,11 +284,7 @@ namespace BattleShip
 				MenuController.HandleSetupMenuInput();
 				    break;
 			    case GameState.Deploying:
-<<<<<<< HEAD
-				HandleDeploymentInput();
-=======
 				DeploymentController.HandleDeploymentInput();
->>>>>>> afbed4864b5a48ea18f42457a93a195b6cb400c3
 				    break;
 			    case GameState.Discovering:
 				    HandleDiscoveryInput();
