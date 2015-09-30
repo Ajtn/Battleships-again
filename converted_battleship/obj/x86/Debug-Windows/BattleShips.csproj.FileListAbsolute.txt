@@ -1,4 +1,3 @@
-C:\Users\Daniel\Documents\GitHub\Battleships-again\converted_battleship\obj\x86\Debug-Mac\BattleShips.csprojResolveAssemblyReference.cache
 C:\Users\Daniel\Documents\GitHub\Battleships-again\converted_battleship\bin\Debug\Resources\animations\splash.txt
 C:\Users\Daniel\Documents\GitHub\Battleships-again\converted_battleship\bin\Debug\Resources\animations\startup.txt
 C:\Users\Daniel\Documents\GitHub\Battleships-again\converted_battleship\bin\Debug\Resources\bundles\FileDialog.txt
@@ -53,11 +52,8 @@ C:\Users\Daniel\Documents\GitHub\Battleships-again\converted_battleship\bin\Debu
 C:\Users\Daniel\Documents\GitHub\Battleships-again\converted_battleship\bin\Debug\Resources\sounds\winner.wav
 C:\Users\Daniel\Documents\GitHub\Battleships-again\converted_battleship\bin\Debug\Resources\SwinGame.icns
 C:\Users\Daniel\Documents\GitHub\Battleships-again\converted_battleship\bin\Debug\Resources\SwinGame.ico
-C:\Users\Daniel\Documents\GitHub\Battleships-again\converted_battleship\bin\Debug\BattleShips.xml
 C:\Users\Daniel\Documents\GitHub\Battleships-again\converted_battleship\bin\Debug\BattleShips.exe
-C:\Users\Daniel\Documents\GitHub\Battleships-again\converted_battleship\bin\Debug\BattleShips.pdb
 C:\Users\Daniel\Documents\GitHub\Battleships-again\converted_battleship\bin\Debug\nunit.framework.dll
 C:\Users\Daniel\Documents\GitHub\Battleships-again\converted_battleship\bin\Debug\SwinGame.dll
 C:\Users\Daniel\Documents\GitHub\Battleships-again\converted_battleship\bin\Debug\nunit.framework.xml
-C:\Users\Daniel\Documents\GitHub\Battleships-again\converted_battleship\obj\x86\Debug-Mac\BattleShips.exe
-C:\Users\Daniel\Documents\GitHub\Battleships-again\converted_battleship\obj\x86\Debug-Mac\BattleShips.pdb
+C:\Users\Daniel\Documents\GitHub\Battleships-again\converted_battleship\obj\x86\Debug-Windows\BattleShips.exe

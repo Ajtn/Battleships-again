@@ -275,29 +275,29 @@ namespace BattleShip
 
 		    switch (CurrentState) {
 			    case GameState.ViewingMainMenu:
-				MenuController.HandleMainMenuInput();
+				    MenuController.HandleMainMenuInput();
 				    break;
 			    case GameState.ViewingGameMenu:
-				MenuController.HandleGameMenuInput();
+				    MenuController.HandleGameMenuInput();
 				    break;
 			    case GameState.AlteringSettings:
-				MenuController.HandleSetupMenuInput();
+				    MenuController.HandleSetupMenuInput();
 				    break;
 			    case GameState.Deploying:
-				DeploymentController.HandleDeploymentInput();
+				    DeploymentController.HandleDeploymentInput();
 				    break;
 			    case GameState.Discovering:
-				    HandleDiscoveryInput();
+				    DiscoveryController.HandleDiscoveryInput();
 				    break;
 			    case GameState.EndingGame:
-				    HandleEndOfGameInput();
+				    EndingGameController.HandleEndOfGameInput();
 				    break;
 			    case GameState.ViewingHighScores:
-				    HandleHighScoreInput();
+				    HighScoreController.HandleHighScoreInput();
 				    break;
 		    }
 
-		    UpdateAnimations();
+		    UtilityFunctions.UpdateAnimations();
 	    }
 
 	    /// <summary>
@@ -308,33 +308,33 @@ namespace BattleShip
 	    /// </remarks>
 	    public static void DrawScreen()
 	    {
-		    DrawBackground();
+		    UtilityFunctions.DrawBackground();
 
 		    switch (CurrentState) {
 			    case GameState.ViewingMainMenu:
-				    DrawMainMenu();
+				    MenuController.DrawMainMenu();
 				    break;
 			    case GameState.ViewingGameMenu:
-				    DrawGameMenu();
+				    MenuController.DrawGameMenu();
 				    break;
 			    case GameState.AlteringSettings:
-				    DrawSettings();
+				    MenuController.DrawSettings();
 				    break;
 			    case GameState.Deploying:
-				    DrawDeployment();
+				    DeploymentController.DrawDeployment();
 				    break;
 			    case GameState.Discovering:
-				    DrawDiscovery();
+				    DiscoveryController.DrawDiscovery();
 				    break;
 			    case GameState.EndingGame:
-				    DrawEndOfGame();
+				    EndingGameController.DrawEndOfGame();
 				    break;
 			    case GameState.ViewingHighScores:
-				    DrawHighScores();
+				    HighScoreController.DrawHighScores();
 				    break;
 		    }
 
-		    DrawAnimations();
+		    UtilityFunctions.DrawAnimations();
 
 		    SwinGame.RefreshScreen();
 	    }
@@ -347,7 +347,7 @@ namespace BattleShip
 	    public static void AddNewState(GameState state)
 	    {
 		    _state.Push(state);
-		    Message = "";
+		    UtilityFunctions.Message = "";
 	    }
 
 	    /// <summary>
