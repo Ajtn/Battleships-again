@@ -7,14 +7,7 @@ using System.Diagnostics;
 
 namespace BattleShip
 {
-    using GameController;
-    using UtilityFunctions;
-    using GameResources;
-    using DeploymentController;
-    using DiscoveryController;
-    using EndingGameController;
-    using MenuController;
-    using HighScoreController;
+
     /// <summary>
     /// Player has its own _PlayerGrid, and can see an _EnemyGrid, it can also check if
     /// all ships are deployed and if all ships are detroyed. A Player can also attach.

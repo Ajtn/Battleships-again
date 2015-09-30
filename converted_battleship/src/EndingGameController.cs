@@ -8,13 +8,7 @@ using SwinGameSDK;
 
 namespace BattleShip
 {
-    using GameController;
-    using UtilityFunctions;
-    using GameResources;
-    using DeploymentController;
-    using DiscoveryController;
-    using MenuController;
-    using HighScoreController;
+  
     /// <summary>
     /// The EndingGameController is responsible for managing the interactions at the end
     /// of a game.

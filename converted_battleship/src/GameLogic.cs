@@ -9,14 +9,7 @@ using SwinGameSDK;
 
 namespace BattleShip
 {
-    using GameController;
-    using UtilityFunctions;
-    using GameResources;
-    using DeploymentController;
-    using DiscoveryController;
-    using EndingGameController;
-    using MenuController;
-    using HighScoreController;
+
     static class GameLogic
     {
 	    public static void Main()

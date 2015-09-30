@@ -1,11 +1,12 @@
-
 using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using SwinGameSDK;
 
-namespace BattleShip
+
+namespace Battleship
 {
     /// <summary>
     /// The AIMediumPlayer is a type of AIPlayer where it will try and destroy a ship
@@ -126,6 +127,7 @@ namespace BattleShip
             }
         }
     }
+
 }
 
 //=======================================================

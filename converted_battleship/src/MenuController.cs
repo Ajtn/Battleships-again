@@ -9,13 +9,6 @@ using SwinGameSDK;
 
 namespace BattleShip
 {
-    using  GameController;
-    using  UtilityFunctions;
-    using  GameResources;
-    using  DeploymentController;
-    using  DiscoveryController;
-    using  EndingGameController;
-    using  HighScoreController;
     /// <summary>
     /// The menu controller handles the drawing and user interactions
     /// from the menus in the game. These include the main menu, game
