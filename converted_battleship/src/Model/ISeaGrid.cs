@@ -5,6 +5,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 
+namespace BattleShip
+{
     /// <summary>
     /// The ISeaGrid defines the read only interface of a Grid. This
     /// allows each player to see and attack their opponents grid.
@@ -39,6 +41,7 @@ using System.Diagnostics;
         /// <returns>the result of the attack</returns>
         AttackResult HitTile(int row, int col);
     }
+}
 
 //=======================================================
 //Service provided by Telerik (www.telerik.com)

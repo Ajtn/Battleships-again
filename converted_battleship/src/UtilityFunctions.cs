@@ -6,16 +6,16 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using SwinGameSDK;
 
-using static GameController;
-using static GameResources;
-using static DeploymentController;
-using static DiscoveryController;
-using static EndingGameController;
-using static MenuController;
-using static HighScoreController;
 
-namespace UtilityFunctions
+namespace BattleShip
 {
+    using  GameController;
+    using  GameResources;
+    using  DeploymentController;
+    using  DiscoveryController;
+    using  EndingGameController;
+    using  MenuController;
+    using  HighScoreController;
     /// <summary>
     /// This includes a number of utility methods for
     /// drawing and interacting with the Mouse.
