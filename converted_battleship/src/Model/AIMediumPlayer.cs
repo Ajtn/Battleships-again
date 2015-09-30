@@ -1,15 +1,21 @@
-
 using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 // using System.Data;
 using System.Diagnostics;
+using SwinGameSDK;
+using UtilityFunctions;
+using GameResources;
 
 /// <summary>
 /// The AIMediumPlayer is a type of AIPlayer where it will try and destroy a ship
 /// if it has found a ship
 /// </summary>
+
+namespace battleships
+{
+
 public class AIMediumPlayer : AIPlayer
 {
 	/// <summary>
@@ -117,6 +123,7 @@ public class AIMediumPlayer : AIPlayer
 			_Targets.Push(new Location(row, column));
 		}
 	}
+}
 }
 
 //=======================================================

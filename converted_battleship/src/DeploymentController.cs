@@ -6,7 +6,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using SwinGameSDK;
 
-
+namespace battleships
+{
 /// <summary>
 /// The DeploymentController controls the players actions
 /// during the deployment phase.
@@ -48,7 +49,7 @@ static class DeploymentController
 	public static void HandleDeploymentInput()
 	{
 		if (SwinGame.KeyTyped(KeyCode.vk_ESCAPE)) {
-			AddNewState(GameState.ViewingGameMenu);
+			GameController.AddNewState(GameState.ViewingGameMenu);
 		}
 
 		if (SwinGame.KeyTyped(KeyCode.vk_UP) | SwinGame.KeyTyped(KeyCode.vk_DOWN)) {
@@ -59,7 +60,7 @@ static class DeploymentController
 		}
 
 		if (SwinGame.KeyTyped(KeyCode.vk_r)) {
-			HumanPlayer.RandomizeDeployment();
+			GameController.HumanPlayer.RandomizeDeployment();
 		}
 
 		if (SwinGame.MouseClicked(MouseButton.LeftButton)) {
@@ -71,11 +72,11 @@ static class DeploymentController
 				DoDeployClick();
 			}
 
-			if (HumanPlayer.ReadyToDeploy & IsMouseInRectangle(PLAY_BUTTON_LEFT, TOP_BUTTONS_TOP, PLAY_BUTTON_WIDTH, TOP_BUTTONS_HEIGHT)) {
-				EndDeployment();
-			} else if (IsMouseInRectangle(UP_DOWN_BUTTON_LEFT, TOP_BUTTONS_TOP, DIR_BUTTONS_WIDTH, TOP_BUTTONS_HEIGHT)) {
+				if (GameController.HumanPlayer.ReadyToDeploy & UtilityFunctions.IsMouseInRectangle(PLAY_BUTTON_LEFT, TOP_BUTTONS_TOP, PLAY_BUTTON_WIDTH, TOP_BUTTONS_HEIGHT)) {
+					GameController.EndDeployment();
+				} else if (UtilityFunctions.IsMouseInRectangle(UP_DOWN_BUTTON_LEFT, TOP_BUTTONS_TOP, DIR_BUTTONS_WIDTH, TOP_BUTTONS_HEIGHT)) {
 				_currentDirection = Direction.LeftRight;
-			} else if (IsMouseInRectangle(LEFT_RIGHT_BUTTON_LEFT, TOP_BUTTONS_TOP, DIR_BUTTONS_WIDTH, TOP_BUTTONS_HEIGHT)) {
+			} else if (UtilityFunctions.IsMouseInRectangle(LEFT_RIGHT_BUTTON_LEFT, TOP_BUTTONS_TOP, DIR_BUTTONS_WIDTH, TOP_BUTTONS_HEIGHT)) {
 				_currentDirection = Direction.LeftRight;
 			} else if (IsMouseInRectangle(RANDOM_BUTTON_LEFT, TOP_BUTTONS_TOP, RANDOM_BUTTON_WIDTH, TOP_BUTTONS_HEIGHT)) {
 				HumanPlayer.RandomizeDeployment();
@@ -181,6 +182,7 @@ static class DeploymentController
 
 		return ShipName.None;
 	}
+}
 }
 
 //=======================================================

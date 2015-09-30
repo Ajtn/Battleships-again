@@ -1,8 +1,13 @@
-
 using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+// using System.Data;
+using System.Diagnostics;
+using SwinGameSDK;
+using UtilityFunctions;
+using GameResources;
+
 // using System.Data;
 using System.Diagnostics;
 /// <summary>
@@ -12,6 +17,10 @@ using System.Diagnostics;
 /// the AI knows it has hit multiple ships. Then will try to destoy all around tiles
 /// that have been hit.
 /// </summary>
+
+namespace battleships
+{
+	
 public class AIHardPlayer : AIPlayer
 {
 
@@ -353,6 +362,7 @@ public class AIHardPlayer : AIPlayer
 		}
 	}
 
+}
 }
 
 //=======================================================
