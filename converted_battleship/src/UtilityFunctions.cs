@@ -9,13 +9,6 @@ using SwinGameSDK;
 
 namespace BattleShip
 {
-    using  GameController;
-    using  GameResources;
-    using  DeploymentController;
-    using  DiscoveryController;
-    using  EndingGameController;
-    using  MenuController;
-    using  HighScoreController;
     /// <summary>
     /// This includes a number of utility methods for
     /// drawing and interacting with the Mouse.
