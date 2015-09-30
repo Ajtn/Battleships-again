@@ -21,13 +21,13 @@ namespace BattleShip
 	    /// </summary>
 	    public static void DrawEndOfGame()
 	    {
-		    DrawField(ComputerPlayer.PlayerGrid, ComputerPlayer, true);
-		    DrawSmallField(HumanPlayer.PlayerGrid, HumanPlayer);
+		    UtilityFunctions.DrawField(GameController.ComputerPlayer.PlayerGrid, GameController.ComputerPlayer, true);
+			UtilityFunctions.DrawSmallField(GameController.HumanPlayer.PlayerGrid, GameController.HumanPlayer);
 
-		    if (HumanPlayer.IsDestroyed) {
-			    SwinGame.DrawTextLines("YOU LOSE!", Color.White, Color.Transparent, GameFont("ArialLarge"), FontAlignment.AlignCenter, 0, 250, SwinGame.ScreenWidth(), SwinGame.ScreenHeight());
+			if (GameController.HumanPlayer.IsDestroyed) {
+				SwinGame.DrawTextLines("YOU LOSE!", Color.White, Color.Transparent, GameResources.GameFont("ArialLarge"), FontAlignment.AlignCenter, 0, 250, SwinGame.ScreenWidth(), SwinGame.ScreenHeight());
 		    } else {
-			    SwinGame.DrawTextLines("-- WINNER --", Color.White, Color.Transparent, GameFont("ArialLarge"), FontAlignment.AlignCenter, 0, 250, SwinGame.ScreenWidth(), SwinGame.ScreenHeight());
+				SwinGame.DrawTextLines("-- WINNER --", Color.White, Color.Transparent, GameResources.GameFont("ArialLarge"), FontAlignment.AlignCenter, 0, 250, SwinGame.ScreenWidth(), SwinGame.ScreenHeight());
 		    }
 	    }
 
@@ -38,8 +38,8 @@ namespace BattleShip
 	    public static void HandleEndOfGameInput()
 	    {
 		    if (SwinGame.MouseClicked(MouseButton.LeftButton) || SwinGame.KeyTyped(KeyCode.vk_RETURN) || SwinGame.KeyTyped(KeyCode.vk_ESCAPE)) {
-			    ReadHighScore(HumanPlayer.Score);
-			    EndCurrentState();
+				HighScoreController.ReadHighScore(GameController.HumanPlayer.Score);
+				GameController.EndCurrentState();
 		    }
 	    }
 
