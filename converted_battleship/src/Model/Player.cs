@@ -7,7 +7,6 @@ using System.Diagnostics;
 
 namespace BattleShip
 {
-
     /// <summary>
     /// Player has its own _PlayerGrid, and can see an _EnemyGrid, it can also check if
     /// all ships are deployed and if all ships are detroyed. A Player can also attach.

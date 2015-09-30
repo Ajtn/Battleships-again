@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using SwinGameSDK;
 
-namespace Battleship
+namespace BattleShip
 {
 /// <summary>
 /// The DeploymentController controls the players actions
